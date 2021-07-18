@@ -19,7 +19,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class inicio extends AppCompatActivity implements OnMapReadyCallback {
+public class inicio extends AppCompatActivity{
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -36,6 +36,7 @@ public class inicio extends AppCompatActivity implements OnMapReadyCallback {
                         .setAction("Action", null).show();
             }
         });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -47,9 +48,9 @@ public class inicio extends AppCompatActivity implements OnMapReadyCallback {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+/*        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        mapFragment.getMapAsync(this);*/
     }
 
     @Override
@@ -66,10 +67,4 @@ public class inicio extends AppCompatActivity implements OnMapReadyCallback {
                 || super.onSupportNavigateUp();
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
-    }
 }

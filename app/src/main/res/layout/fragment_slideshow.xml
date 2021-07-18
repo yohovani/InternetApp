@@ -7,21 +7,34 @@
 		android:layout_height="match_parent"
 		tools:context=".ui.slideshow.SlideshowFragment">
 
-	<TextView
-			android:id="@+id/text_slideshow"
+	<androidx.appcompat.widget.LinearLayoutCompat
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginStart="8dp"
-			android:layout_marginTop="8dp"
-			android:layout_marginEnd="8dp"
-			android:textAlignment="center"
-			android:textSize="20sp"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent" tools:text="Fragmant Cobros"/>
-	<ImageView
-			android:layout_width="285dp"
-			android:layout_height="109dp" tools:src="Images/cobros.svg"
-			android:id="@+id/imageView2" tools:layout_editor_absoluteY="16dp" tools:layout_editor_absoluteX="53dp"/>
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="200dp"
+				app:srcCompat="@drawable/servidor"
+				tools:ignore="VectorDrawableCompat">
+		</ImageView>
+		<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnConsultarEquipo"
+				android:drawableLeft="@drawable/router_inalambrico"
+				android:text="Equipo En Stock"/>
+		<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnAltaEquipoUsuario"
+				android:drawableLeft="@drawable/user"
+				android:text="Dar de Alta Equipo Cliente"/>
+		<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/btnPuntosConexion"
+				android:drawableLeft="@drawable/redes"
+				android:text="Puntos de Conexión"/>
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

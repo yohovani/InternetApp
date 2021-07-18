@@ -7,17 +7,36 @@
 		android:layout_height="match_parent"
 		tools:context=".ui.home.HomeFragment">
 
-	<TextView
-			android:id="@+id/text_home"
+	<androidx.appcompat.widget.LinearLayoutCompat
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginStart="8dp"
-			android:layout_marginTop="8dp"
-			android:layout_marginEnd="8dp"
-			android:textAlignment="center"
-			android:textSize="20sp"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent"/>
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="200dp"
+					app:srcCompat="@drawable/hacker"
+					tools:ignore="VectorDrawableCompat">
+			</ImageView>
+			<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnCobrar"
+					android:drawableLeft="@drawable/money"
+					android:text="Cobrar"/>
+			<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnAlta"
+					android:drawableLeft="@drawable/user"
+					android:text="Dar de Alta Cliente"/>
+			<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnBuscar"
+					android:drawableLeft="@drawable/scan"
+					android:text="Buscar Cliente"/>
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Alta_cliente">
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+                android:paddingVertical="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ic_add_friend"
+                tools:ignore="VectorDrawableCompat">
+        </ImageView>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/et_ac_Nombre"
+                android:hint="Nombre"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_Loacalidad"
+                android:padding="10dp"
+                android:hint="Localidad"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_Direccion"
+                android:padding="10dp"
+                android:hint="Direccion"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_monto_pagar"
+                android:padding="10dp"
+                android:hint="Renta Mensual"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_desc_equipo"
+                android:padding="10dp"
+                android:hint="Descripción de Equipo"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_sector"
+                android:padding="10dp"
+                android:hint="Sector Enlazado"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_tel"
+                android:padding="10dp"
+                android:hint="Teléfono"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_ac_tel_2"
+                android:padding="10dp"
+                android:hint="2do. Teléfono"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ac_Alta"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/user"
+                android:text="Dar de Alta Cliente" android:theme="@style/AppTheme"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
